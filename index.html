@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Flight Booking System</title>
+    <style>
+        footer{
+            margin-top: auto;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">FlyDreamAir</h1>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <a href="index.html">Flight Timetable</a>
+                <a href="#">Flights</a>
+                <a href="services.html">Purchasing in-flight services</a>
+                <a href="#">Member Management</a>
+            </nav>
+        </div>
+        <div class="flight-schedule">
+            <div class="flight" onclick="showFlightDetails(1)">
+                <h2>Flight 1: New York to Los Angeles</h2>
+                <p><strong>Departure:</strong> 10:00 AM</p>
+                <p><strong>Arrival:</strong> 1:00 PM</p>
+                <p><strong>Airline:</strong> FlyDream Airlines</p>
+                <p><strong>Price:</strong> $250</p>
+            </div>
+            <div class="flight" onclick="showFlightDetails(2)">
+                <h2>Flight 2: Chicago to Miami</h2>
+                <p><strong>Departure:</strong> 11:30 AM</p>
+                <p><strong>Arrival:</strong> 2:30 PM</p>
+                <p><strong>Airline:</strong> FlyDream Airlines</p>
+                <p><strong>Price:</strong> $200</p>
+            </div>
+            <div class="flight" onclick="showFlightDetails(3)">
+                <h2>Flight 3: San Francisco to Seattle</h2>
+                <p><strong>Departure:</strong> 9:15 AM</p>
+                <p><strong>Arrival:</strong> 11:45 AM</p>
+                <p><strong>Airline:</strong> FlyDream Airlines</p>
+                <p><strong>Price:</strong> $180</p>
+            </div>
+            <div class="flight" onclick="showFlightDetails(4)">
+                <h2>Flight 4: Beijing to Sydeny</h2>
+                <p><strong>Departure:</strong> 1:55 PM</p>
+                <p><strong>Arrival:</strong> 1:10 AM</p>
+                <p><strong>Airline:</strong> FlyDream Airlines</p>
+                <p><strong>Price:</strong> $500</p>
+            </div>
+            <div class="flight" onclick="showFlightDetails(5)">
+                <h2>Flight 5: London to Iceland</h2>
+                <p><strong>Departure:</strong> 9:15 PM</p>
+                <p><strong>Arrival:</strong> 11:45 AM</p>
+                <p><strong>Airline:</strong> FlyDream Airlines</p>
+                <p><strong>Price:</strong> $380</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+<footer>
+    <div class="footer">
+        <p>&copy; 2023 FlyDreamAir. All rights reserved.</p>
+    </div>
+</footer>
+</html>
