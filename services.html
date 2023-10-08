@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/services.css">
+    <title>In-Flight Services</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="text-decoration:none; color: #f0f0f0;" >Welcome to In-Flight Services</a></h1>
+    </header>
+    <main>
+        <section id="services">
+            <h2>Available Services</h2>
+            <div id="food-list">
+                <h3>Foods</h3>
+                <ul>
+                    <li>
+                        <span>Pizza - $10</span>
+                    </li>
+                    <li>
+                        <span>Sandwich - $8</span>
+                    </li>
+                    <li>
+                        <span>Salad - $7</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="drink-list">
+                <h3>Drinks</h3>
+                <ul>
+                    <li>
+                        <span>Cola - $3</span>
+                    </li>
+                    <li>
+                        <span>Orange Juice - $4</span>
+                    </li>
+                    <li>
+                        <span>Water - $1</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="total-price">
+                <h3>Total Price: $<span id="total-price-value">0</span></h3>
+            </div>
+        </section>
+        <section id="purchase-form">
+            <h2>Make a Reservation</h2>
+            <label for="food">Select Food:</label>
+            <select id="food">
+                <option value="10">Pizza</option>
+                <option value="8">Sandwich</option>
+                <option value="7">Salad</option>
+            </select>
+            <label for="drink">Select Drink:</label>
+            <select id="drink">
+                <option value="3">Cola</option>
+                <option value="4">Orange Juice</option>
+                <option value="1">Water</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <button id="submit-button">Submit Reservation</button>
+        </section>
+    </main>
+    <script src="js/services.js"></script>
+</body>
+</html>
