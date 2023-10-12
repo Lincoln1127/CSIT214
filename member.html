@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Member</title>
+    <link rel="stylesheet" href="css/member.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/member.js"></script>
+</head>
+<body>
+<div class="button-div">
+    <button class="button-top" id="addBtn">Add Customers</button>
+    <button id="delete-last-button" class="button-top">Delete the last entry</button>
+    <button id="delete-all-button" class="button-top">Delete all entries</button>
+</div>
+
+<form>
+    <input id="delete-id" type="text" placeholder="Please enter the developerId"  class="text" />
+    <button class="delete" id="deleteBtn">Delete</button>
+</form>
+<table class="grid" id="developer-table">
+    <tr>
+        <th>NAME</th>
+        <th>FLIGHT NUMBER</th>
+        <th>Location</th>
+    </tr>
+</table>
+
+<dialog id="dialog">
+    <h3>user input</h3>
+    <label style="padding-left: 45px">
+        NAME : <input type="text" name="id" id="id" />
+    </label>
+    <br>
+    <br>
+    <label>
+        FLIGHT NUMBER : <input type="text" name="id" id="url" />
+    </label>
+    <br>
+    <br>
+    <label style="padding-left: 55px">
+        Location : <input type="text" name="id" id="location" />
+    </label>
+    <br>
+    <br>
+    <button id="closeBtn" onclick="close()">close</button>
+    <button id="submitBtn" onclick="close()">submit</button>
+</dialog>
+
+</body>
+</html>
